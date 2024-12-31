@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #121313, #f6ffff); /* Gradient Background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.app-title {
+  text-align: center;
+  color: #ff6f61; /* Bright coral color for the title */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow wrapping of elements */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#taskInput, #taskTime {
+  flex: 1 1 60%; /* Allow inputs to take equal space */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: #fefefe; /* Light background for inputs */
+}
+
+#addTaskBtn {
+  padding: 10px 15px;
+  background-color: #ff6f61; /* Bright button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  flex: 1 1 30%; /* Keep the button size balanced */
+}
+
+#addTaskBtn:hover {
+  background-color: #e55b50; /* Darker shade on hover */
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f7f7; /* Subtle background for tasks */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-item .task-actions button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.complete-btn {
+  background-color: #4caf50; /* Green for complete */
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #43a047; /* Darker green on hover */
+}
+
+.edit-btn {
+  background-color: #ffeb3b; /* Yellow for edit */
+  color: black;
+}
+
+.edit-btn:hover {
+  background-color: #fdd835; /* Darker yellow on hover */
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red for delete */
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray; /* Muted color for completed tasks */
+}
